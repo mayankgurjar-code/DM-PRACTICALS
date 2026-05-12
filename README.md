@@ -247,5 +247,179 @@ print("\nVertex | In-degree | Out-degree")
 print("-" * 35)
 for i in range(n):
     out_degree = sum(matrix[i])
+
+
+# ============================================================
+# Discrete Mathematical Structures - All 7 Practicals Output
+# B.Sc. (H) Computer Science - Semester II
+# ============================================================
+
+
+# ============================================================
+# PRACTICAL 1 - SET Operations (Menu Driven)
+# ============================================================
+
+"""
+--- SET Operations Menu ---
+1. Is Member
+2. Power Set
+3. Subset Check
+4. Union
+5. Intersection
+6. Complement
+7. Set Difference
+8. Symmetric Difference
+9. Cartesian Product
+0. Exit
+Enter choice: 1
+Enter elements of Set A (space-separated): 1 2 3 4
+Enter element to check: 3
+Is member: True
+
+--- SET Operations Menu ---
+Enter choice: 2
+Enter elements of Set A (space-separated): 1 2 3
+Power Set: [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]]
+
+--- SET Operations Menu ---
+Enter choice: 3
+Enter elements of Set A (space-separated): 1 2
+Enter elements of Set B: 1 2 3
+A is subset of B: True
+
+--- SET Operations Menu ---
+Enter choice: 4
+Enter elements of Set A (space-separated): 1 2 3
+Enter elements of Set B: 3 4 5
+Union: [1, 2, 3, 4, 5]
+
+--- SET Operations Menu ---
+Enter choice: 5
+Enter elements of Set A (space-separated): 1 2 3
+Enter elements of Set B: 2 3 4
+Intersection: [2, 3]
+
+--- SET Operations Menu ---
+Enter choice: 6
+Enter elements of Set A (space-separated): 1 2 3
+Enter Universal Set elements: 1 2 3 4 5
+Complement: [4, 5]
+
+--- SET Operations Menu ---
+Enter choice: 7
+Enter elements of Set A (space-separated): 1 2 3
+Enter elements of Set B: 2 3 4
+Set Difference (A-B): [1]
+
+--- SET Operations Menu ---
+Enter choice: 8
+Enter elements of Set A (space-separated): 1 2 3
+Enter elements of Set B: 3 4 5
+Symmetric Difference: [1, 2, 4, 5]
+
+--- SET Operations Menu ---
+Enter choice: 9
+Enter elements of Set A (space-separated): 1 2
+Enter elements of Set B: 3 4
+Cartesian Product: [(1, 3), (1, 4), (2, 3), (2, 4)]
+
+--- SET Operations Menu ---
+Enter choice: 0
+"""
+
+
+# ============================================================
+# PRACTICAL 2 - RELATION Classification
+# ============================================================
+
+"""
+Enter number of elements: 3
+Enter the relation matrix row by row (space-separated 0s and 1s):
+1 1 0
+1 1 0
+0 0 1
+Reflexive: True, Symmetric: True, Anti-symmetric: False, Transitive: True
+The relation is an Equivalence Relation.
+"""
+
+
+# ============================================================
+# PRACTICAL 3 - Permutations
+# ============================================================
+
+"""
+Enter digits (space-separated): 1 2 3
+Enter length of permutation: 2
+Allow repetition? (yes/no): no
+Total permutations: 6
+(1, 2)
+(1, 3)
+(2, 1)
+(2, 3)
+(3, 1)
+(3, 2)
+"""
+
+
+# ============================================================
+# PRACTICAL 4 - Solutions of x1 + x2 + ... + xn = C
+# ============================================================
+
+"""
+Enter number of variables (n): 2
+Enter constant C (<=10): 3
+(0, 3)
+(1, 2)
+(2, 1)
+(3, 0)
+Total solutions: 4
+"""
+
+
+# ============================================================
+# PRACTICAL 5 - Polynomial Evaluation
+# ============================================================
+
+"""
+Enter degree of polynomial: 2
+Enter coefficients from constant term to highest degree (e.g. for 4n^2+2n+9: enter 9 2 4):
+9 2 4
+Enter value of n: 5
+f(5) = 119.0
+"""
+
+
+# ============================================================
+# PRACTICAL 6 - Complete Graph Check
+# ============================================================
+
+"""
+Enter number of vertices: 3
+Enter adjacency matrix row by row:
+0 1 1
+1 0 1
+1 1 0
+The graph is a Complete Graph.
+"""
+
+
+# ============================================================
+# PRACTICAL 7 - In-degree and Out-degree
+# ============================================================
+
+"""
+Enter number of vertices: 3
+Enter adjacency matrix of directed graph row by row:
+0 1 1
+0 0 1
+1 0 0
+
+Vertex | In-degree | Out-degree
+-----------------------------------
+  1    |     1     |     2
+  2    |     1     |     1
+  3    |     2     |     1
+"""
+    
     in_degree = sum(matrix[j][i] for j in range(n))
     print(f"  {i+1}    |     {in_degree}     |     {out_degree}")
